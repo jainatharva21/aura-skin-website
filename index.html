@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Aura</title>
+        <meta charset = "utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <meta name = "keywords" content = "nipunjain, drnipunjain, nipun jain, dermatologist, cosmetologist, Nipun Jain,
+        Dr. Nipun Jain, Skin Specialist, Consultant, Doctor, NipunJain, Nipun, Dwarka Skin Doctor
+        Aura Skin Clinic, Aura Skin, Aura Skin Cosemetology Clinic">
+        <meta name = "description" content = "A skin specialist with more than 20 years of experience. 
+        A doctor with a lot of patience and a knack for dealing with patients of all sorts.">
+
+        <link rel = "stylesheet" href = "css/aura.app.css"/>
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap"/>
+        <link rel = "stylesheet" href = "css/bootstrap.min.css"/>
+        <link rel = "stylesheet" href = "js/bootstrap.min.js"/>
+        <link rel = "stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://forms.pabbly.com/embed/CY80-490448?w=350'></script>
+    </head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:300,400,700');
+
+
+* {
+    box-sizing: border-box;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgb(133, 5, 145);
+    color: white;
+    transition: 0.3s;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+.auraBrand {
+    font-size: 25px;
+    margin:1%;
+    padding: 1%;
+    color: #000;
+    font-style: bold;
+}
+
+.column-2{
+    font-size: 120%;
+    width: calc(100% - 380px);
+    padding: 1%;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: auto;
+    margin: 30px;
+    margin-bottom: 20px;
+    background-color: rgb(216, 188, 228);
+    line-height: 2;
+}
+
+.nipun-jain{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+
+.profile-image{
+    border-radius: 200px;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and (min-width: 1024px){
+    .nipun-jain, .column-2{
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .column-2{
+        width:93%;
+    }
+}
+@media screen and (max-width: 600px){
+    .column-2{
+        width:93%;
+        font-size: 12px;
+        margin-right: 10px;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .profile-image{
+        margin-left: -25px;
+    }
+}
+
+.about-me {
+    background:rgb(133, 5, 145);
+    margin: 30px;
+    padding: 35px;
+}
+
+
+.service-tab h1 {
+    padding-left: 26px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color:rgb(83, 39, 242);
+    transition: color 0.3s;
+}
+
+.social-icon:hover{
+    color: rgb(31, 30, 30)
+}
+
+.practo-icon {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    bottom: 7px;
+}
+
+.practo-icon:hover{
+    color: rgb(31, 30, 30)
+}
+
+.w3-container, .container{
+    margin-bottom: 15px;
+}
+
+.view-list {
+    width: 100%;
+    padding-top: 0;
+    overflow: hidden;
+    font-size: 20px;
+    transition: all 0.2s cubic-bezier(0.6, 0.1, 0.3, 0.8);
+    transition-property: height,opacity;
+}
+
+.view-list li {
+    display: inline-block;
+    margin: 0 10px 8px 0;
+    font-size: 15px;
+}
+
+
+.exp-list {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    transition: all 0.2s cubic-bezier(0.6, 0.1, 0.3, 0.8);
+    transition-property: height,opacity;
+}
+
+.exp-list li {
+    display: block;
+    margin: 0 10px 8px 0;
+    font-size: 15px;
+}
+
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], input[type=email], input[type=tel], input[type=date],  select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+  
+  /* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+  /* Style the submit button */
+input[type=submit]{
+    background-color: rgb(133, 5, 145);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+  
+  /* Style the container */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 52px;
+    
+}
+  
+  /* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 25% !important;
+    margin-top: 6px !important;
+}
+  
+  /* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 75% !important;
+    margin-top: 6px !important;
+}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit], input[type=reset] {
+      width: 100% !important;
+      margin-top: 0 !important;
+    }
+}
+
+iframe {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+}
+
+.contact-info{
+    font-size: 120%;
+    width: 98%;
+    padding: 1%;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
+    margin: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(6, 186, 252);
+    line-height: 2;
+}
+
+@media scan and (max-width: 1024px){
+    .contact-info {
+        display: inline-block;
+    }
+}
+
+@media scan and (max-width: 768px){
+    .contact-info {
+        width: 93%;
+    }
+}
+
+#mail-button {
+    background-color: rgb(133, 5, 145);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    text-decoration: none;
+}
+    </style>
+
+    <script>
+        function myFunction() {
+
+            var x = document.getElementById("navbarNav");
+
+            if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+    <body>
+        <div id = "page">
+            <nav class = "w3-bar w3-border"> 
+                <div class = "topnav" id = "navbarNav">
+                    <div>
+                        <a href = "#contact" class = "active">Contact</a>
+                        <a href = "#book-an-appointment">Book an Appointment</a>
+                        <a href = "#services">Services and Experience</a>
+                        <a href = "#about">About</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class = "auraBrand">
+                <center><img src = "/Users/atharvajain/Desktop/aura skin/aura.png">
+                <h1><b>Aura Skin Cosmetology Clinic</b></h1></center>
+            </div>
+            <div class = "about-me" id = "about">
+                <div class = "nipun-jain">
+                    <img src = "/Users/atharvajain/Desktop/aura skin/papa.jpg" class = "profile-image">
+                </div>
+                <div class = "column-2">
+                    <center><h3><b>Dr. Nipun Jain</b></h3></center>
+                        <center>MD - Dermatology, Venereology & Leprosy, MBBS</center>
+                        <p><center>
+                            <h2>
+                                <a class = "social-icon" href "tel: 9811542371">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </a>
+                                <a class = "social-icon" href = "https://www.instagram.com/dr_nipunjain/">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                                <a class = "social-icon" href = "https://wa.me/919811542371">
+                                    <ion-icon name="logo-whatsapp"></ion-icon>
+                                </a>
+                                <a href = "https://www.practo.com/Delhi/doctor/dr-nipun-jain-dermatologist-cosmetologist-2">
+                                    <img class = "practo-icon" src = "practo.svg">
+                                </a>
+                            </h2>
+                        </center></p>
+                    <h1><b>About</b></h1>
+                    <p> Dr. Nipun Jain completed MBBS in 1996 from V.S.S Medical College, Sambalpur, Orissa, Sambalpur University;
+                        MD from S.N Medical College, Agra University, Uttar Pradesh in 2002, worked as Senior Resident in D.D.U Hospital for 3 years where he was exposed to all kind of Skin, Hair, Nail disorders, 
+                        Sexually transmitted diseases and cosmetic treatments. 
+                        Also worked as a Senior Consultant Dermatologist at Columbia-Asia Hospital, Gurgaon. 
+                        Currently working at Sri Balaji Action Hospital, New Delhi since 2007. Dr Nipun Jain is a certified Botox 
+                        Specialist and deals in all kind of cosmetic procedures like Platelet Rich Plasma and Lasers.
+                    </p>
+                </div>
+            </div>
+            <div class = "container" id = "services">
+                <div class = "w3-row">
+                    <div class = "service-tab">
+                        <h1><b>Services</b></h1>
+                        <ul class="view-list">
+                            <li>Laser Hair Removal - Face</li>
+                            <li>Tattoo Removal</li>
+                            <li>PRP Hair transplant</li>
+                            <li>Acne / Pimples Treatment</li>
+                            <li>Lactic Peel</li>
+                            <li>Laser Resurfacing</li>
+                            <li>Leucoderma Treatment</li>
+                            <li>Chemical Peel</li> 
+                            <li>Sun Spots, Age Spots, And Other Pigmented Lesions</li> 
+                            <li>Dermaroller</li> 
+                            <li>Wart Removal</li> 
+                            <li>Trichology</li> 
+                            <li>Melasma Treatment</li>  
+                            <li>Peel, Polishing, Lasers</li>  
+                            <li>Medical Vitligo Treatment</li>   
+                        </ul>
+                        <h1><b>Experience</b></h1>
+                        <ul class = "exp-list">
+                            <li>2004 - 2007 | Senior Resident at DDU HOSPITAL</li>
+                            <li>2007 - Present | Consultant Dermatologist at Sri Balaji Action Medical Institute</li>
+                            <li>2007 - 2015 | Consultant Dermatologist at Columbia Asia Hospital</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "container" style = "background-color: rgb(127, 255, 246)" id = "book-an-appointment">
+            <center>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScx8_gmryApsC_EZFl2XXSjOrmfnCsTCCYprYsjijJs3XKL5w/viewform?embedded=true" width="640" height="1135" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </center>
+            </div>
+
+            <div class = "w3-container" style = "background-color: purple; margin: 15px; padding-left: -15px;" id = "contact">
+                <div class = "w3-row">
+                    <div class = "contact-info">
+                        <center><h2><b>Contact</b></h2>
+                        <p>
+                            Need to get in touch? For online or in-person consultation, please contact Dr. Nipun at either one of the links provided below. Or fill out the form provided above to <b>Book an Appointment</b>
+                        </p></center>
+                        <p><center>
+                            <h2>
+                                <a class = "social-icon" href "tel: 9811542371">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </a>
+                                <a class = "social-icon" href = "https://www.instagram.com/dr_nipunjain/">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                                <a class = "social-icon" href = "https://wa.me/919811542371">
+                                    <ion-icon name="logo-whatsapp"></ion-icon>
+                                </a>
+                                <a href = "https://www.practo.com/Delhi/doctor/dr-nipun-jain-dermatologist-cosmetologist-2">
+                                    <img class = "practo-icon" src = "/Users/atharvajain/Desktop/aura skin/practo.svg">
+                                </a>
+                            </h2>
+                        </center></p>
+                    </div>
+                </div>
+                <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.5118806379537!2d77.06217971496578!3d28.584416782436815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b18e57b612d%3A0x8f0007f94d768deb!2sAura%20Skin%20Cosmetology%20Clinic!5e0!3m2!1sen!2sin!4v1659883840259!5m2!1sen!2sin" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.9752937783446!2d77.08211771496619!3d28.600517982430503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1bd7b7f188dd%3A0xb7ec013aff03e2cc!2sDr%20Nipun%20Jain%20Skin%20Care%20Clinic!5e0!3m2!1sen!2sin!4v1659883936830!5m2!1sen!2sin" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </center>
+            </div>
+        </div>
+        <script src = "js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <script src = "js/aura.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+        
+    </body>
+</html>
+
+
+<!-- Wrap everything in containers that might fix your issue-->
+
+
+
+<!--
+<form>
+    <div class = "row">
+        <div class = "col-25">
+            <label>Full Name</label>
+        </div>
+        <div class = "col-75">
+            <input type = "text" name = "Name" required>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-25">
+            <label>Email Address</label>
+        </div>
+        <div class = "col-75">
+            <input type = "email" name = "Email" required>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-25">
+            <label>Phone Number</label>
+        </div>
+        <div class = "col-75">
+            <input type = "tel" name = "phone" required>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-25">
+            <label>Date</label>
+        </div>
+        <div class = "col-75">
+            <input type ="date" name="date" placeholder="dd-mm-yyyy" required>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-25">
+            <label>Clinic</label>
+        </div>
+        <div class = "col-75">
+            <select class = "clinic-select">
+                <option>Monday to Friday: 7:30pm - 9pm</option>
+                <option>Saturday: 7:30pm - 9pm</option>
+            </select>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-25">
+            <label>Query</label>
+        </div>
+        <div class = "col-75">
+            <textarea class = "text-ar" rows = 7 id = "messageText"></textarea>
+        </div>   
+    </div>
+
+    <div>
+        <button id = mail-button type = "button" value = "Confirm">
+            <a href = "mailto:drnipunjain@gmail.com?subject=Appointment%20Booking%20Confirmed%20-%20(YOUR%20NAME)&body=I%20have%20booked%20an%20appointment%20at%20the%20clinic%20at%20-%20(Time%20of%20appointment)">Confirm</a>
+        </button>
+    </div>
+</form>
+
+-->
